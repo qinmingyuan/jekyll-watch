@@ -81,7 +81,8 @@ module Jekyll
       [
         config_files(options),
         options["destination"],
-        custom_excludes(options),
+        options['watch_exclude'],
+        custom_excludes(options)
       ].flatten
     end
 
